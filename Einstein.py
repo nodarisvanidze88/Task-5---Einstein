@@ -31,8 +31,8 @@ def einstein(s, m, d):                                                          
         return converter(s, m, d)
 
 def finalResult(s, m, d, s1, d1):                                               # need consultation
-    if einstein(s,m,d) is type(int) or type(float) and d1 in s1:
-        return converter(s1,einstein(s,m,d),d1)
+    if d not in s and d1 not in s1:
+        return "Sorry, both mass scale and energy scale is wrong"
     else:
         return converter(s1,einstein(s,m,d),d1)
 
